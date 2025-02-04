@@ -8,8 +8,8 @@ echo "Starting setup script..."
 
 # Install Python 3.12
 echo "Installing Python 3.12..."
-sudo apt update
-sudo apt install -y python3.12 python3.12-venv
+apt update
+apt install -y python3.12 python3.12-venv
 
 # Install Poetry
 echo "Installing Poetry..."
