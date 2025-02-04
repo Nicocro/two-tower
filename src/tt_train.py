@@ -161,6 +161,10 @@ def train_model(query_tower: nn.Module,
             "epoch": epoch,
             "avg_loss": avg_loss,
         })
+    
+    # Log models to wandb
+    wandb.save('query_tower.pt')
+    wandb.save('passage_tower.pt')
 
     # Close wandb run
     wandb.finish()
@@ -207,8 +211,8 @@ def main():
     )
     
     # Optionally save the trained models
-    torch.save(trained_query_tower.state_dict(), 'weights/trained_query_tower.pt')
-    torch.save(trained_passage_tower.state_dict(), 'weights/trained_passage_tower.pt')
+    torch.save(trained_query_tower.state_dict(), 'trained_query_tower.pt')
+    torch.save(trained_passage_tower.state_dict(), 'trained_passage_tower.pt')
 
 
 main()
