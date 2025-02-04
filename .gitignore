@@ -1,0 +1,124 @@
+# ================================
+# General Python ignores
+# ================================
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dll
+*.dylib
+__pycache__/
+*.log
+*.out
+*.err
+
+# ================================
+# Virtual environments
+# ================================
+venv/
+.env
+.envrc
+*.env
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# ================================
+# Jupyter Notebook / IPython
+# ================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+.jupyter/
+.Jupyter/
+
+# ================================
+# Deep Learning Frameworks
+# ================================
+
+# TensorFlow / Keras
+*.tflite
+*.pb
+*.h5
+*.hdf5
+*.ckpt
+**/checkpoint
+tensorflow_logs/
+events.out.tfevents.*
+
+# PyTorch
+*.pt
+*.pth
+lightning_logs/
+wandb/
+hydra/
+mlruns/
+mlflow/
+*.onnx
+
+# Hugging Face Transformers
+huggingface/
+*.json
+*.bin
+*.safetensors
+**/tokenizer.json
+**/special_tokens_map.json
+
+# FastAI
+*.pkl
+
+# ================================
+# Datasets and Results
+# ================================
+datasets/
+data/
+*.csv
+*.tsv
+*.jsonl
+*.zip
+*.tar
+*.tar.gz
+*.parquet
+*.hdf5
+*.npz
+*.npy
+*.pkl
+*.db
+*.sqlite
+*.mdb
+*.feather
+
+# ================================
+# Experiment Tracking / Logs
+# ================================
+logs/
+wandb/
+*.log
+*.txt
+*.yaml
+*.yml
+tb_logs/  # TensorBoard logs
+mlruns/   # MLflow logs
+
+# ================================
+# IDE / Editor / OS files
+# ================================
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ================================
+# Cloud and Deployment
+# ================================
+.colab/
+google_colab/
+.cloudpickle/
+**/gcs.json
+**/aws_credentials
+**/config.json
+**/.sagemaker/
+**/.cloudpickle
