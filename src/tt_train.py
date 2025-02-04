@@ -121,6 +121,8 @@ def train_model(query_tower: nn.Module,
 
         pbar = tqdm(train_loader, desc=f"Epoch {epoch+1}/{num_epochs}", leave=False)
         for batch in train_loader:
+            # Move batch tensors to the same device as the model
+            batch = {k: v.to(device) for k, v in batch.items()}
             # Zero gradients
             optimizer.zero_grad()
             

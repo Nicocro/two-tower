@@ -23,12 +23,10 @@ echo "Installing dependencies with Poetry..."
 poetry env use python3.12
 poetry install
 
-# Create a directory for model weights and vocab
-mkdir -p models
 
 # Download model weights and vocab using wget
 echo "Downloading model weights and vocabulary..."
-wget -O models/cbow_text8_weights.pt https://huggingface.co/nico-x/text8-cbow-w2v/resolve/main/cbow_text8_weights.pt
-wget -O models/text8_vocab.json https://huggingface.co/nico-x/text8-cbow-w2v/resolve/main/text8_vocab.json
+wget -O cbow_text8_weights.pt https://huggingface.co/nico-x/text8-cbow-w2v/resolve/main/cbow_text8_weights.pt
+wget -O text8_vocab.json https://huggingface.co/nico-x/text8-cbow-w2v/resolve/main/text8_vocab.json
 
 echo "Setup complete!
